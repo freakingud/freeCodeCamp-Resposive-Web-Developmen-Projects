@@ -1,0 +1,97 @@
+<div id="main">
+      <header class="header">
+        <h1 id="title">
+          Survey Form
+        </h1>
+        <p id="description">Tell us more about yourself?</p>
+      </header>
+      <section class="section">
+        <form id="survey-form">
+          <div class="input-cont">
+            <input required id="name" type="text" placeholder="Enter your Full Name" />
+            <label for="name" id="name-label">Name</label>
+          </div>
+          <div class="input-cont">
+            <input
+               required
+              id="email"
+              type="email"
+              placeholder="Enter your Email Address"
+            />
+            <label for="email" id="email-label">Email</label>
+          </div>
+          <div class="input-cont">
+            <input
+              id="number"
+              type="number"
+              min="18"
+              max="100"
+              placeholder="Enter your Age"
+            />
+            <label for="number" id="number-label">Age</label>
+          </div>
+          <div class="flex-col">
+            <label>Select your profession</label>
+            <select id="dropdown">
+              <option disabled selected>Select your profession</option>
+              <option>Student</option>
+              <option>Professional</option>
+              <option>Unemployed</option>
+              <option>Freelancer</option>
+            </select>
+          </div>
+          <div class="gender-section">
+            <div>Gender</div>
+            <div>
+              <label>
+              <input type="radio" name="gender" value="male" />
+              Male
+            </label>
+            <label>
+              
+              <input type="radio" name="gender" value="female" />
+              Female
+            </label>
+            <label>
+              
+              <input type="radio" name="gender" value="others" />
+              Others
+            </label>
+            </div>
+          </div>
+          <div class="flex-col">
+            <label class="flex-col">
+              What are your interests ?<small>(Select all that apply)</small>
+              </label>
+              <label>
+                Data Science
+                <input type="checkbox" value="ui" />
+              </label>
+              <label>
+                Game Development
+                <input type="checkbox" value="ui" />
+              </label>
+              <label>
+                AI & ML
+                <input type="checkbox" value="ui" />
+              </label>
+              <label>
+                Blockchain
+                <input type="checkbox" value="ui" />
+              </label>
+              <label>
+                Web Development
+                <input type="checkbox" value="ui" />
+              </label>
+          </div>
+          <div>
+            <textarea style="width: 100%;height: 4rem;margin: 12px 0;" placeholder="Anything else you'd like to share?"></textarea>
+          </div>
+          <div class="submit-cont">
+          <button type="submit" id="submit" class="submit-button">
+Submit
+</button>
+          </div>
+        </form>
+      </section>
+    </div>
